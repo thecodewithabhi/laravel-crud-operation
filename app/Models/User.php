@@ -12,6 +12,15 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    public $brand;
+
+    public function honk() {
+        return "Beep!";
+    }
+    
+    public function hello() {
+        return "Only for Testing";
+    }
     /**
      * The attributes that are mass assignable.
      *
